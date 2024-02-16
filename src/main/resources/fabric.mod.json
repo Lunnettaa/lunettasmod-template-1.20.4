@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "lunettasmod",
+	"version": "${version}",
+	"name": "Lunettas Mod",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Lunetta and Azureshadows"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/lunettasmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.lunetta.lunettamod.LunettasMod"
+		],
+		"client": [
+			"net.lunetta.lunettamod.LunettasModClient"
+		],
+		"fabric-datagen": [
+			"net.lunetta.lunettamod.LunettasModDataGenerator"
+		]
+	},
+	"mixins": [
+		"lunettasmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.6",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
